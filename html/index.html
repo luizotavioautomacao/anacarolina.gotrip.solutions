@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GoTrip.Solutions</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="./img/trip2.png" alt="Consultora de Viagens" class="profile-img" />
+    <h1>Ana Souza</h1>
+    <h4>Consultora de Viagens Personalizadas</h4>
+    <p>
+      <strong>Planeje sua viagem dos sonhos com segurança, economia e roteiro sob medida!</strong>
+    </p>
+    <a href="https://forms.gle/1S1ZPZFRQRosB1K49" class="link-button" target="_blank">Monte seu roteiro</a>
+    <a href="https://instagram.com/anacarolinasilvatur" class="link-button" target="_blank">@anacarolinasilvatur</a>
+    <a href="https://instagram.com/apoenaporanacarolina" class="link-button" target="_blank">@apoenaporanacarolina</a>
+    <a href="https://www.linkedin.com/in/anaconsultoria" class="link-button" target="_blank">LinkedIn</a>
+    
+    <!-- WhatsApp para desktop -->
+    <a href="https://web.whatsapp.com/send/?phone=5537999161116&text=Olá%2C+quero+ajuda+para+planejar+minha+viagem!&type=phone_number&app_absent=0"
+      class="link-button whatsapp-desktop" target="_blank">
+      Fale comigo no WhatsApp
+    </a>
+
+    <!-- WhatsApp para mobile -->
+    <a href="https://wa.me/5537999161116?text=Olá%2C+quero+ajuda+para+planejar+minha+viagem!" class="link-button whatsapp-mobile" target="_blank">
+      Fale comigo no WhatsApp
+    </a>
+
+    <!--a href="https://gotrip.education/roteiro-checklist" class="link-button" target="_blank">Checklist Pré-Viagem</a-->
+  </div>
+</body>
+
+<style>
+  .whatsapp-desktop,
+  .whatsapp-mobile {
+    display: none;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const isMobile = /iPhone|Android|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+    if (isMobile) {
+      document.querySelector('.whatsapp-mobile')?.style.setProperty('display', 'block');
+    } else {
+      document.querySelector('.whatsapp-desktop')?.style.setProperty('display', 'block');
+    }
+  });
+</script>
+</html>
