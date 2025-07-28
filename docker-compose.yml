@@ -5,6 +5,8 @@ services:
     volumes:
       - ${VOLUME_1_HOST}:${VOLUME_1_CONTAINER}
       - ${VOLUME_2_HOST}:${VOLUME_2_CONTAINER}
+      - ${VOLUME_3_HOST}:${VOLUME_3_CONTAINER}
+      - ${VOLUME_4_HOST}:${VOLUME_4_CONTAINER}
     ports:
       - "${PORT_DEFAULT}:${PORT_DEFAULT}"
     restart: always
